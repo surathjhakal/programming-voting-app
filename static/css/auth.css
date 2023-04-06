@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: top;
+}
+
+.auth_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.auth {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: #fff;
+  color: #b33939;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  border: 2px solid #b33939;
+}
+
+.auth_heading {
+  position: absolute;
+  top: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: cursive;
+  color: crimson;
+  z-index: 2;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 38%;
+  border-radius: 50%;
+}
+
+.auth_content {
+  margin-top: 3rem;
+}
+
+.auth_content h3 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.auth_content form {
+  padding: 0 2rem;
+}
+.auth_content form p {
+  padding: 1rem 0.4rem 0.4rem 0.4rem;
+  font-weight: 600;
+}
+.auth_content form input {
+  padding: 0.4rem;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #b33939;
+  border-bottom: 1px solid grey;
+  font-size: 1rem;
+}
+
+.auth_content form button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #b33939;
+  border-radius: 4rem;
+  color: #b33939;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  background-color: rgb(228, 228, 228);
+}
+
+.auth_content form button:hover {
+  background-color: #b33939;
+  color: #fff;
+}
+
+.acc {
+  margin: 2rem;
+}
+
+.acc a {
+  color: rgb(107, 100, 100);
+  text-decoration: none;
+}
+
+.acc a:hover {
+  color: #b33939;
+}
+
+.message {
+  margin: 0 2.4rem;
+  outline: none;
+  color: #b33939;
+  padding: 0.6rem;
+  border-radius: 4px;
+  text-align: center;
+  border: 2px solid #b33939;
+}
+
+.navbar_image {
+  height: 90px;
+  width: 130px;
+}
+
+@media screen and (max-width: 500px) {
+  .auth_box {
+    gap: 4rem;
+    margin: 1rem 0;
+  }
+  .auth {
+    width: 95%;
+  }
+  .auth_heading {
+    position: relative;
+    top: 0;
+  }
+  .avatar {
+    left: 35%;
+  }
+  .navbar_image {
+    height: 45px;
+    width: 100px;
+  }
+}
