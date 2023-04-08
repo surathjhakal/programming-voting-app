@@ -30,6 +30,7 @@ SECRET_KEY = 'cisr^2wf6rafjmsy$cnn!vl62_%pifpvxj1vebp#6^rcwz^)ph'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://programming-voting-app-production.up.railway.app']
 
 
 # Application definition
